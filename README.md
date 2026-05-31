@@ -12,7 +12,7 @@ A machine learning web application that predicts the number of calories burned d
 
 ## 📸 Preview
 
-> Split-screen UI: input form on the left, animated calorie result on the right.
+![CaloriBurn Preview](https://raw.githubusercontent.com/muktiprab/calorie-burn-prediction/Source-Code-and-Preview/CaloBurn%20Preview.png)
 
 ---
 
@@ -157,4 +157,4 @@ docker run -p 8000:8000 caloriburn
 **Mukti Prabowo**
 - GitHub: [@muktiprab](https://github.com/muktiprab)
 - LinkedIn: [muktiprabowo](https://linkedin.com/in/muktiprabowo)
-- Kaggle: [@muktiprab007](https://www.kaggle.com/muktiprabowo)
+- Kaggle: [@muktiprabowo](https://www.kaggle.com/muktiprabowo)
