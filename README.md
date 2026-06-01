@@ -1,12 +1,17 @@
-# 🔥 CaloBurn — Calorie Burn Prediction App
+# 🔥 CaloriBurn — Calorie Burn Prediction App
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Railway](https://img.shields.io/badge/Deployed-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
 
 A machine learning web application that predicts the number of calories burned during exercise based on personal physiological data. Built with FastAPI as the backend and a custom-designed HTML/CSS/JS frontend.
+
+🔗 **Live Demo:** [calorie-burn-prediction-production.up.railway.app](https://calorie-burn-prediction-production.up.railway.app/)
+
+📓 **Kaggle Notebook:** [Calories Burnt Prediction — XGBR, GBR, SVR, CBR](https://www.kaggle.com/code/muktiprabowo/calories-burnt-prediction-xgbr-gbr-svr-cbr)
 
 ---
 
@@ -65,7 +70,7 @@ Pipeline([
 calorie-burnt/
 ├── main.py            # FastAPI backend
 ├── index.html         # Frontend UI
-├── svr_model.pkl      # Trained model (not included, generate locally)
+├── svr_model.pkl      # Trained model
 ├── requirements.txt   # Python dependencies
 ├── Dockerfile         # Docker configuration
 └── README.md
@@ -86,10 +91,7 @@ cd calorie-burn-prediction
 pip install -r requirements.txt
 ```
 
-### 3. Generate model
-Train and save the model from the notebook, then place `svr_model.pkl` in the project root.
-
-### 4. Run the app
+### 3. Run the app
 ```bash
 python -m uvicorn main:app --reload
 ```
@@ -139,7 +141,7 @@ docker run -p 8000:8000 caloriburn
 ## ⚠️ Limitations
 
 - Model is trained on exercise duration up to **30 minutes**. Predictions outside this range may not be reliable (extrapolation).
-- Dataset is limited to a specific demographic range; results may vary for edge cases.
+- Model was trained with scikit-learn 1.6.1 — minor version differences may produce warnings but do not affect predictions.
 
 ---
 
@@ -148,7 +150,7 @@ docker run -p 8000:8000 caloriburn
 - **Backend:** FastAPI, Uvicorn, Pydantic
 - **ML:** scikit-learn, NumPy, joblib
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript
-- **Deployment:** Docker
+- **Deployment:** Docker, Railway
 
 ---
 
@@ -157,4 +159,4 @@ docker run -p 8000:8000 caloriburn
 **Mukti Prabowo**
 - GitHub: [@muktiprab](https://github.com/muktiprab)
 - LinkedIn: [muktiprabowo](https://linkedin.com/in/muktiprabowo)
-- Kaggle: [@muktiprabowo](https://www.kaggle.com/muktiprabowo)
+- Kaggle: [@muktiprab007](https://www.kaggle.com/muktiprabowo)
