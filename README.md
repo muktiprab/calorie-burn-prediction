@@ -32,9 +32,9 @@ Three regression models were trained and compared:
 
 | Model | R² Score | MAE | RMSE |
 |---|---|---|---|
-| XGBoost Regressor | - | - | - |
-| CatBoost Regressor | - | - | - |
-| **SVR (RBF Kernel)** | **0.9999** | **0.33** | **0.67** |
+| XGBoost Regressor | 0.9986 | 1.5521 | 2.2966 |
+| CatBoost Regressor | 0.9997 | 0.5225 | 0.9275 |
+| **SVR (RBF Kernel)** | **0.9999** | **0.3090** | **0.6126** |
 
 **Best model: Support Vector Regression (SVR)** with StandardScaler preprocessing via sklearn Pipeline.
 
